@@ -1,0 +1,5 @@
+RewriteEngine on 
+
+RewriteRule ^detay-(([0-9a-zA-Z-_]+)-()[0-9]+)$ index.php?sayfa=detay?=yazi=$2 [L,QSA]
+RewriteRule ^([0-9a-zA-Z-_]+)$ index.php?sayfa=$1 [L,QSA] 
+RewriteRule ^$ index.php [L,QSA]
